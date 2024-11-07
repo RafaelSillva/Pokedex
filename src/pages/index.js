@@ -42,17 +42,17 @@ export default function Home() {
   };
 
   return (
-    <main>
+    <main className="body">
       <form action="" className="search-form" onSubmit={handleSearch}>
         <div className="input-control">
           <input
             type="text"
             value={search}
             onChange={handleChange}
-            placeholder="Search for a Pokemon..."
+            placeholder="Procurar um Pokemon..."
           />
           <button className="submit-btn" type="submit">
-            Search
+            Buscar
           </button>
         </div>
       </form>
@@ -80,20 +80,20 @@ export default function Home() {
                 </div>
                 <div className="card-body">
                   <h3>{pokemon.name}</h3>
-                  <p>More Details &nbsp; &rarr;</p>
+                  <p>Mais detalhes &nbsp; &rarr;</p>
                 </div>
               </div>
             );
           })
         ) : (
-          <h1>Loading...</h1>
+          <h1>Carregando...</h1>
         )}
       </div>
 
       <div className="next">
         {allPokemonData.length > 0 && (
           <button className="next-btn" onClick={next}>
-            Load More &darr;
+            Ver mais &darr;
           </button>
         )}
       </div>

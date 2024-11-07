@@ -71,24 +71,24 @@ function Pokemon() {
               <h2>{pokemonItem?.name}</h2>
               <div className={styles.PokemonInfo}>
                 <div className={styles.PokemonInfoItem}>
-                  <h5>Name:</h5>
+                  <h5>Nome:</h5>
                   <p>{pokemonItem?.name},</p>
                 </div>
 
                 <div className={styles.PokemonInfoItem}>
-                  <h5>Type:</h5>
+                  <h5>Tipo:</h5>
                   {pokemonItem?.types?.map((type) => {
                     return <p key={type.type.name}>{type.type.name},</p>;
                   })}
                 </div>
 
                 <div className={styles.PokemonInfoItem}>
-                  <h5>Height:</h5>
+                  <h5>Altura:</h5>
                   <p>{pokemonItem?.height}</p>
                 </div>
 
                 <div className={styles.PokemonInfoItem}>
-                  <h5>Abilities:</h5>
+                  <h5>Habilidades:</h5>
                   {pokemonItem?.abilities?.map((ability) => {
                     return (
                       <p key={ability.ability.name}>{ability.ability.name},</p>
@@ -97,14 +97,14 @@ function Pokemon() {
                 </div>
 
                 <div className={styles.PokemonInfoItem}>
-                  <h5>Stats:</h5>
+                  <h5>Status:</h5>
                   {pokemonItem?.stats?.map((stat) => {
                     return <p key={stat.stat.name}>{stat.stat.name},</p>;
                   })}
                 </div>
 
                 <div className={styles.PokemonInfoItem}>
-                  <h5>A few moves:</h5>
+                  <h5>Novos movimentos:</h5>
                   {pokemonItem?.moves?.slice(0, 3).map((move) => {
                     return <p key={move.move.name}>{move.move.name},</p>;
                   })}

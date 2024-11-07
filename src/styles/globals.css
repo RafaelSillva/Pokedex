@@ -113,7 +113,7 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 2rem;
   padding: 1rem;
-  margin: 3rem 15rem;
+  margin: 2rem 15rem;
 }
 
 .all-pokemon .card {
@@ -132,7 +132,7 @@ body {
 }
 
 .all-pokemon .card .card-image {
-  height: 250px;
+  height: 215px;
 }
 
 .all-pokemon .card img {
@@ -194,4 +194,43 @@ body {
 
 .next button:hover {
   color: #333;
+}
+
+@media (max-width: 430px) {
+  
+  body {
+   display: flex;
+   align-items: center;
+   background: #f0f0f0;
+  }
+  
+  .search-form {
+    width: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    height: auto;
+  }
+
+  .input-control {
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .all-pokemon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas */
+    grid-gap: 1rem; /* Espaçamento entre as colunas */
+    padding: 1rem;
+    margin: 2rem auto;
+  }
+
+  .card .card-body {
+    display: flex;
+    justify-items: baseline;
+    background: #fff;
+  }
 }

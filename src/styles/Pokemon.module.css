@@ -4,7 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 600px;
-  height: 800px;
+  height: 750px;
   transition: all 0.3s ease-in-out;
   border-radius: 12px;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
@@ -13,17 +13,17 @@
 .PokemonImage {
   display: flex;
   justify-content: center;
-  height: 380px;
+  height: 350px;
 }
 
 .PokemonImage img {
-  width: 96%;
+  width: 60%;
   object-fit: contain;
   filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
 }
 
 .PokemonBody {
-  padding: 2.5rem 3rem;
+  padding: 2.1rem 1rem;
 }
 
 .PokemonBody h2 {
@@ -61,4 +61,49 @@
   font-size: 1.2rem;
   font-weight: 500;
   color: #333;
+}
+
+@media (max-width:430px){
+.PokemonBg{
+  width: 29rem;
+  height: 65rem;
+  margin-top: 25px;
+  padding: 5rem 3rem;
+  
+}
+.PokemonImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 5rem 3rem;
+  margin-left: 15%;
+}
+
+.PokemonImage img{
+  object-fit: contain;
+  width: 60rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.PokemonBody .PokemonInfo .PokemonInfoItem{
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centraliza o texto */
+  gap: 0.5rem;
+  flex-wrap: wrap; /* Impede a quebra dos itens internos */
+
+}
+
+.PokemonBody h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 }
